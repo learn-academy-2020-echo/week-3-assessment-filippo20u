@@ -21,7 +21,7 @@ import dice5 from '../assets/dice-5.png'
 import dice6 from '../assets/dice-6.png'
 
 class Board extends Component{
-  // 2) constructor is  lifecycle method that runs when a new object is created and pass information along the way, (props) indicates properties and it's needed to pass information downstream.
+  // 2) constructor is a lifecycle method that runs when a new object is created and pass information along the way, (props) indicates properties and it's needed to pass information downstream.
   constructor(props){
     super(props)
     // 3) this.state is an object with key:value pairs defined for my 3 variables (rollImages, currentPic and diceLog)
@@ -33,16 +33,16 @@ class Board extends Component{
   }
 
   handleRoll = () => {
-    // 4) line below destructrues 2 variables to make them easier to be called in my HandleRoll function
+    // 4) line below destructures 2 variables to make them easier to be called in my HandleRoll function
     let { rollImages, diceLog } = this.state
-    // 5) define a variable that picka random number based on the length of rollImages array
+    // 5) define a variable that pick a random number based on the length of rollImages array
     let randomNum = Math.ceil(Math.random() * rollImages.length)
     let newRoll = rollImages[randomNum]
-    // 6) update the state for the variable newRoll and update the array that contianes the log of my rolls with the value drom the newRoll variable
+    // 6) update the state for the variable newRoll and update the array that containes the log of my rolls with the value from the newRoll variable
     this.setState({ currentPic: newRoll, diceLog: [... diceLog, newRoll] })
   }
 
-  // 7) render is one of React lyfecycle methods that is needed to render so visualize the components in the browser
+  // 7) render is one of React lyfecycle methods that is needed to render my components/code in the browser
   render(){
     const { currentPic, diceLog } = this.state
     return(
@@ -61,5 +61,5 @@ class Board extends Component{
   }
 }
 
-// 10) export defualt + "component name", it's a must have line to export out  my component(Board)  and accessed by index.js
+// 10) export defualt + "component name", it's a must have line to export out my component(Board)  and accessed by index.js
 export default Board

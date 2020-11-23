@@ -23,7 +23,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer:
 
   they are components that have a cyle so they get called when needed, executed and  killed when they are not useful anymore.
-  three examples could be constructor(), render() and .
+  examples could be constructor(), render().
 
   Researched answer:
 
@@ -39,21 +39,22 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer:
 
-  an object contains a key:value pair but they can also contain a function, classes are the blue print for an object.
+  an object contains a key:value pair but they can also contain a function, classes are the blueprint for an object.
 
   Researched answer:
 
-  Objects are a datatype that contain collections of key:value pairs of data (static information) and behavior (methods), classes are blueprint for objects, reusable and customizable, much like functions contain data and behavior. their names are always capitalized and pascal cased.
+  Objects are a datatype that contain collections of key:value pairs of data (static information) and behavior (methods).
+  Classes are blueprint for objects, reusable and customizable, much like functions contain data and behavior. their names are always capitalized and pascal cased.
 
 4. What is the difference between a HTML div and a span?
 
   Your answer:
 
-  div is a container of information, span is an empty space tha creates space separation in html pages.
+  div is a container of information, span is used for inline text.
 
   Researched answer:
 
-  div and span are HTML tags, used to define parts of a document, span represents an inline portions of a document like a few words in a sentence. a div represents a block-level of a page like a few paragraphs, or an image.
+  div and span are HTML tags, used to define parts of a document, span represents an inline portions of a document like a few words in a sentence. a div represents a block-level of a page like a few paragraphs, or an image with its caption.
 
 
 
@@ -65,7 +66,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Researched answer:
 
   React fragments let you group a list of children without adding extra nodes to the DOM. because fragments are not rendered to the DOM. 
-  React.Fragment is used where we would normally use a wrapper div and it makes the code a tiny bit faster  and use less memory.
+  React.Fragment is used where we would normally use a wrapper div and it makes the code a tiny bit faster and use less memory.
 
 
 
@@ -77,7 +78,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer:
 
-  A responsive web application is an application capable of being viewed and used properly on any device. useful tools can be flexbox,  CSS media queries and bootstrap.
+  A responsive web application is an application capable of being viewed and used properly on any device. useful tools can be flexbox, CSS media queries and bootstrap.
 
 
 
@@ -85,12 +86,12 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Your answer:
 
-  props ia way to pass information in react from a parent to a child component.
+  props is a way to pass information in react from a parent to a child component.
 
   Researched answer:
 
-Props means properties is a keyword in React for passing information from one component to another in one direction, from parent to child.
-Props cannot be updated, they are "read only", props are a snapshot of state that are passed on to components tasked with displaying and/or letting a user interact with that information.
+  Props means properties and it is a keyword in React for passing information from one component to another in one direction, from parent to child.
+  Props cannot be updated, they are "read only", they are a snapshot of state that are passed on to components tasked with displaying and/or letting a user interact with that information.
 
 
 
@@ -98,23 +99,26 @@ Props cannot be updated, they are "read only", props are a snapshot of state tha
 
   Your answer:
 
-  this is a property of classes. it's a way in Javascript  to refers to global object that my property refers to. 
+  this is a property of classes. it's a way in Javascript to refers to global object that my property refers to. 
 
 
   Researched answer:
 
-  this is a Javascript keyword is needed to access a key:value pair inside of an object. it's used to refers the name of the object inside its scope without repeating it.
+  this is a Javascript keyword is needed to access a key:value pair inside of an object. 
+  it's used to refers the name of the object inside its scope without repeating it.
 
 
 9. STRETCH: What is a ternary operator in JavaScript?
 
   Your answer:
 
-it's  syntactic sugar, it allows to write complicted code in a quick and shorter way.
+  it's  syntactic sugar, it allows to write complicted code in a quick and shorter way.
 
   Researched answer:
 
-Ternary operators are handy shortcuts for creating if/else statements in JavaScript. Ternary operators allow JavaScript developers to make very clean and concise code. they work only for exactly two outcomes, an evaluation that is truthy, an evaluation that is falsey.
+  Ternary operators are handy shortcuts for creating if/else statements in JavaScript. 
+  Ternary operators allow JavaScript developers to make very clean and concise code. 
+  they work only for exactly two outcomes, an evaluation that is truthy, an evaluation that is falsey.
 
 
 10. STRETCH: What is an anonymous function in JavaScript?
@@ -125,12 +129,13 @@ Ternary operators are handy shortcuts for creating if/else statements in JavaScr
 
   Researched answer:
 
-  Anonymous functions are functions stored in variables that do not need a name. They are always invoked (called) using the variable name. The function is stored in memory, but the runtime doesn't automatically create a reference to it for you.
+  Anonymous functions are functions stored in variables that do not need a name. 
+  They are always called using the variable name. The function is stored in memory, but the runtime doesn't automatically create a reference to it for you.
 
 
 ## Looking Ahead: Terms for Next Week
 - Ruby 
-  it's an object based programming language, its main features are duck typing and blocks
+  it's an object based programming language, its main features are duck typing and blocks.
 
 - Object oriented programming
 
@@ -140,13 +145,14 @@ Ternary operators are handy shortcuts for creating if/else statements in JavaScr
   it's a tool to test Ruby code
 
 - Instance variable
-   is a variable defined in a class, for which each instantiated object of the class has a separate copy, or instance. itis not a class variable, It is a type of class attribute. 
+  It is a variable defined in a class, for which each instantiated object of the class has a separate copy, or instance. it is not a class variable, It is a type of class attribute. 
 
 - Ruby blocks
   A Ruby block is a way of grouping statements, and are chunks of code between braces or between "do..end" that you can associate with method invocations.
 
 - Ruby hashes
-  A Hash is a collection of key-value pairs like this: "employee" = > "salary". It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
+  A Hash is a collection of key-value pairs like this: "employee" = > "salary". 
+  It is similar to an array, except that indexing is done via arbitrary keys of any object type, not an integer index.
 
 - `getter` and `setter` methods in Ruby
   they are two methods that allow to access a class'variable from outside the class.

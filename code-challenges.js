@@ -53,6 +53,7 @@ const middle = (array) => {
  let splitted = array.split("")
 //  even number of letters
  if (splitted.length %2==0)
+// probably string interpolation is not the best way to do it but it works :)
  return `${splitted[Math.floor((splitted.length / 2)-1)]}${splitted[Math.floor(splitted.length / 2)]}`
 // odd numbers of letters
 else if (splitted.length %2 !==0)
@@ -76,17 +77,12 @@ class Sphere {
     constructor(radius) {
       this.pi = 3.14159265359
       this.radius = radius
-    }
-
+     }
 
       calcArea =  () => { 
         return 4*3.14159265359*Math.pow(this.radius, 2)
-    }
-     
+    }   
   }
-
-
-
 
 var sphere1 = new Sphere(this.radius=2)
 var sphere2 = new Sphere(this.radius=5)
@@ -95,7 +91,6 @@ var sphere3 = new Sphere(this.radius=123)
 console.log("Sphere1 =", sphere1.calcArea())
 console.log("Sphere2 =", sphere2.calcArea())
 console.log("Sphere3 =", sphere3.calcArea())
-
 
 
 // #### example of Sphere area to check if the function works
@@ -109,8 +104,6 @@ console.log("Sphere3 =", sphere3.calcArea())
 // console.log(" Area test1 r=2"  ,area(test1))
 // console.log(" Area test2 r=5"  ,area(test2))
 // console.log(" Area test1 r=123",area(test3))
-
-
 
 
 
@@ -139,6 +132,3 @@ console.log("Challenge 5.2:",sum(numbersToAdd2))
 console.log("Expected output 5.3 : []")
 console.log("Challenge 5.3:",sum(numbersToAdd3))
 
-// let array = [2, 4, 45, 9];
-// array2 = array.map((elem, index) => array.slice(0,index + 1).reduce((a, b) => a + b));
-// console.log("array2", array2);
